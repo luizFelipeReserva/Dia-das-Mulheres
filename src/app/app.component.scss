@@ -1,0 +1,101 @@
+.dia-das-mulheres {
+    background-color: rgba(215, 72, 247, 0.2);
+    width: 100vw;
+    height: 100vh;
+
+    .boas-vindas {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    
+        .inicio {
+            color: #000;
+            background-color: rgba(215, 72, 247, 0.2);
+        }
+    }
+
+    .questionario {
+        width: 100%;
+        height: 100%;
+        color: rgba(215, 72, 247);
+
+        .spotify {
+            width: calc(100% - 32px);
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        .titulo-questionario {
+            font-weight: bold;
+            font-size: 22px;
+            text-align: center;
+            padding-top: 10px;
+        }
+
+        .agradecimento {
+            width: calc(100% - 32px);
+            margin: 10px;
+            text-align: justify;
+            line-height: 22px;
+        }
+    }
+
+    .fotinhos {
+        display: flex;
+        flex-direction: column;
+
+        .titulo-foto {
+            padding: 10px 5px;
+            color: rgba(215, 72, 247);
+            font-weight: bold;
+            background-color: rgba(215, 72, 247, 0.2);
+        }
+
+        img {
+            max-width: 100vw;
+        }
+    }
+
+    .heart {
+        position: fixed;
+        left: 164px;
+        bottom: 40px;
+        height: 40px;
+        width: 40px;
+        background: #f20044;
+        transform: rotate(-45deg);
+        animation: heart 2s linear infinite;
+    
+        &::before {
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: #f20044;
+            top: -50%;
+            border-radius: 50%;
+        }
+    
+        &::after {
+            content: "";
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background: #f20044;
+            right: -50%;
+            border-radius: 50%;
+        }
+    
+    }
+    
+    @-webkit-keyframes heart {
+        0% { scale: 1.07;}
+        80% { scale: 1;}
+        100% { scale: 0.8;}
+    }
+}

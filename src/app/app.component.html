@@ -1,0 +1,50 @@
+<div class="dia-das-mulheres">
+  <div class="boas-vindas" *ngIf="mostraBoasVindas">
+      <button
+        mat-button
+        class="inicio"
+        (click)="iniciaQuestionario()">
+        Clique aqui
+      </button>
+  </div>
+
+  <div class="questionario" *ngIf="mostraPrincipal">
+    <div class="titulo-questionario"> Feliz dia das mulheres meu amor!!! </div>
+    <div class="spotify">
+      * Essa música sempre me lembrou muito você
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/75IQVo8hqI1iwVZyvkN2VT?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+    <div class="agradecimento">
+      Fiz esse site rapidinho antes de ir dormir porque não queria deixar o dia passar em branco.
+      Meu amor, se você soubesse o quanto sou feliz ao seu lado e o orgulho que sinto de você...
+      Você é uma pessoa tão boa de se ter por perto. Eu sempre disse isso, mas queria poder explicar melhor.
+      Sinto que não preciso forçar nenhum aspecto da minha personalidade para estar ao seu lado, sempre posso ser 
+      eu mesmo com você, e isso é mais especial do que você imagina. Nossa conexão é incrível, e eu amo o jeito que a 
+      gente sempre dá um jeito de se divertir juntos. Não consigo imaginar o nosso amor se apagando um pelo outro, 
+      simplesmente porque é muito fácil estar com você. Você é muito madura em todas as decisões que toma, é inteligente, 
+      engraçada, interessante... Eu poderia ficar aqui listando 1001 qualidades que fazem de você uma das mulheres que mais admiro no mundo.
+      Não sei se já eu consegui expressar o quanto acho incrível você ter passado na USP é uma conquista tão tão foda. 
+      Ontem, enquanto você fazia aquela atividade, vi o quão qualificada você é para estar nesse lugar e o quanto merece isso.
+      De verdade, meu bem, você é espetacular, e eu espero que você me dê a honra de ser seu para sempre.
+    </div>
+  </div>
+
+  <div class="fotinhos" *ngIf="mostraPrincipal">
+    <div class="titulo-foto"> Eu amo muito essa foto! </div>
+    <img src="assets/mavi1.jpeg">
+
+    <div class="titulo-foto"> Rolê que por pouco não deu errado mas no fim foi muito bom </div>
+    <img src="assets/mavi2.jpeg">
+
+    <div class="titulo-foto"> Dias que você tá casualmente linda </div>
+    <img src="assets/mavi3.jpeg">
+
+    <div class="titulo-foto"> Vermelho sempre combina muito com você </div>
+    <img src="assets/mavi4.jpeg">
+
+    <div class="titulo-foto"> Você é incrível </div>
+    <img src="assets/mavi5.jpeg">
+  </div>
+
+  <div class="heart"></div>
+</div>
